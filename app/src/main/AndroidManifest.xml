@@ -13,9 +13,6 @@
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivityCalculator"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
