@@ -1,6 +1,7 @@
 package com.example.ibrah;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.example.ibrah.util.Generator;
 import com.example.ibrah.util.PrintGrid;
@@ -31,6 +32,7 @@ public class GameEngine {
     }
 
     public void createGrid(Context context){
+        Log.e("GameEngine","createGrid is working");
         this.context = context;
 
         //create the grid and store it//
