@@ -7,7 +7,10 @@
     android:autofillHints="username"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/loginbg"
+    >
+
 
 
     <EditText
@@ -17,7 +20,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:padding="15dp"
-        android:text="Email"
+       android:hint="Email"
         />
 
     <EditText
@@ -26,24 +29,25 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:padding="15dp"
-
+        android:hint="Password"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <Button
         android:id="@+id/buttonlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#69D1FA"
         android:hint="Log In"
-        android:text="Log In"
-        android:padding="15dp"
         android:onClick="login"
 
-        />
+        android:padding="15dp"
+        android:text="Log In" />
 
     <Button
         android:id="@+id/buttonsignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#69D1FA"
         android:onClick="signup"
         android:padding="15dp"
         android:text="Sign Up"
