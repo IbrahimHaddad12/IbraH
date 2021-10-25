@@ -8,6 +8,20 @@
     android:orientation="vertical"
     android:paddingHorizontal="60dp"
     android:paddingVertical="10dp"
-    tools:context=".WelcomeActivity"/>
+    tools:context=".WelcomeActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+
+        />
+
+
+
+
+</LinearLayout>
 
 
