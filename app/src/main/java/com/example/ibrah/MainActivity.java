@@ -23,8 +23,7 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.e("MainActivity","onCreate");
-        GameEngine.getInstance().createGrid(this);
+
 
         editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
         editTextPassword = findViewById(R.id.editTextPassword);
