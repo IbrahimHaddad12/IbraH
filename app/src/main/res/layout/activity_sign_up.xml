@@ -7,69 +7,43 @@
     android:orientation="vertical"
     tools:context=".SignUpActivity">
 
-
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textEmailAddress"
-        android:padding="15dp"
-        android:text="Email" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPassword"
-        android:padding="15dp"
-
+        android:id="@+id/editTextPersonName"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        android:layout_marginTop="100dp"
         />
 
     <EditText
-        android:id="@+id/editTextTextPersonFirstName"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:padding="15dp"
-        android:text="FirstName" />
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:inputType="textEmailAddress"
+       android:layout_marginLeft="50dp"
+        android:text="Email" />
 
     <EditText
-        android:id="@+id/editTextTextPersonLastName"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:padding="15dp"
-        android:text="LastName" />
+        android:layout_marginLeft="50dp"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:inputType="textPassword"
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="number"
-        android:padding="15dp"
-        android:text="PhoneNumber" />
+
+
+        />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_width="350dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:onClick="submit"
         android:text="SUBMIT"
-        android:onClick="submit"/>
+        android:layout_marginTop="100dp"
+        />
 
 </LinearLayout>
