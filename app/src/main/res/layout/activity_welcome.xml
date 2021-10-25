@@ -11,8 +11,10 @@
     tools:context=".WelcomeActivity">
 
     <TextView
-        android:id="@+id/textViewWelcome"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="493dp"
         android:text="TextView" />
 </LinearLayout>
+
+
