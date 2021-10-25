@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
 
 
     public void login(View view) {
-        Intent intent = new Intent(this, About.class);
+        Intent intent = new Intent(this, WelcomeActivity.class);
         if (!editTextTextEmailAddress.getText().toString().equals("")){
             //saving email and password of user in a local file for future use
             //create sp file
