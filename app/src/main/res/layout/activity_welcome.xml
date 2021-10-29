@@ -8,7 +8,10 @@
     android:orientation="vertical"
     android:paddingHorizontal="60dp"
     android:paddingVertical="10dp"
-    tools:context=".WelcomeActivity">
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/welcomebg"
+
+    >
 
 
     <TextView
@@ -18,6 +21,8 @@
         android:text="TextView"
 
         />
+
+
 
 
 
