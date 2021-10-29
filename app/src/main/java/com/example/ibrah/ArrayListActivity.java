@@ -41,14 +41,14 @@ public class ArrayListActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Item: " + list.get(i), Toast.LENGTH_LONG).show();
             }
         });
-    myListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-        @Override
-        public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-            list.remove(i);
-            myAdapter.notifyDataSetChanged();
-            return false;
-        }
-    });
+        myListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                list.remove(i);
+                myAdapter.notifyDataSetChanged();
+                return false;
+            }
+        });
 
     }
 }

@@ -7,35 +7,30 @@
     android:orientation="vertical"
     tools:context=".SignUpActivity"
     android:background="@drawable/loginbg"
+    android:gravity="center"
     >
 
     <EditText
-        android:id="@+id/editTextPersonName"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="50dp"
-        android:inputType="textPersonName"
-        android:hint="First Name"
-        android:layout_marginTop="100dp"
-        />
-
-    <EditText
         android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:layout_marginLeft="50dp"
+        android:padding="15dp"
         android:hint="Email"
+        android:textSize="18sp"
+
+
+
         />
 
     <EditText
-        android:layout_marginLeft="50dp"
         android:id="@+id/editTextTextPassword"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="Password"
-
+        android:padding="15dp"
+        android:textSize="18sp"
 
         />
 
@@ -44,7 +39,7 @@
         android:layout_width="350dp"
         android:layout_height="61dp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#69D1FA"
         android:onClick="submit"
         android:text="SUBMIT" />
