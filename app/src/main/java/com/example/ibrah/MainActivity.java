@@ -1,7 +1,6 @@
 package com.example.ibrah;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -55,7 +54,7 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
 
 
     public void login(View view) {
-        Intent intent = new Intent(this, WelcomeActivity.class);
+        Intent intent = new Intent(this, HotelPageActivity.class);
         if (!editTextTextEmailAddress.getText().toString().equals("")){
             //saving email and password of user in a local file for future use
             //create sp file

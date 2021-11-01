@@ -2,14 +2,10 @@ package com.example.ibrah;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-public class WelcomeActivity extends AppCompatActivity {
+public class HotelPageActivity extends AppCompatActivity {
 
 
     private TextView textViewWelcome;
@@ -17,7 +13,7 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.activity_hotel_page);
 
         textViewWelcome = findViewById(R.id.textViewWelcome);
 

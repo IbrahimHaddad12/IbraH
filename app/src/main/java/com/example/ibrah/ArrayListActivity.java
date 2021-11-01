@@ -27,13 +27,13 @@ public class ArrayListActivity extends AppCompatActivity {
 
         list = new ArrayList<>();
         list.add(new Item("this is my first item", R.drawable.ronaldo, true, 50));
-        list.add(new Item("this is not my first item", R.drawable.ic_launcher_background, true, 51));
+
 
         //reference to the list view so it can be programmed
         myListView = findViewById(R.id.myListView);
         //connect adapter with data
         myAdapter = new CustomAdapter(this, R.layout.item_row, list);
-        //connect adapted with view
+        //connect adapter with view
         myListView.setAdapter(myAdapter);
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

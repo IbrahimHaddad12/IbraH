@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:paddingHorizontal="60dp"
     android:paddingVertical="10dp"
-    tools:context=".WelcomeActivity"
+    tools:context=".HotelPageActivity"
     android:background="@drawable/welcomebg"
 
     >
