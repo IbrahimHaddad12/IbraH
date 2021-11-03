@@ -27,6 +27,10 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        editTextTextEmailAddress2  =findViewById(R.id.editTextTextEmailAddress2);
+        editTextTextPassword = findViewById(R.id.editTextTextPassword);
+        mAuth = FirebaseAuth.getInstance();
     }
 
     public void submit(View view) {

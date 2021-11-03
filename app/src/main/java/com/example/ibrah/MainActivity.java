@@ -54,7 +54,6 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
 
 
     public void login(View view) {
-        Intent intent = new Intent(this, HotelPageActivity.class);
         if (!editTextTextEmailAddress.getText().toString().equals("")){
             //saving email and password of user in a local file for future use
             //create sp file
@@ -67,7 +66,6 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
 
             //save and close file
             editor.commit();
-            intent.putExtra("name", editTextTextEmailAddress.getText().toString());
 
 
 
@@ -75,12 +73,9 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
 
 
     }
-
+    login(editTextTextEmailAddress.getText().toString(), editTextPassword.getText().toString());
 }
-    public void signup(View view) {
-        Intent intent = new Intent( this, SignUpActivity.class);
-        startActivity(intent);
-    }
+
     //clears the email and password input on long click by user
     @Override
     public boolean onLongClick(View view) {
@@ -99,6 +94,10 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
                            // Sign in success, update UI with the signed-in user's information
                            Log.d(TAG, "signInWithEmail:success");
                            FirebaseUser user = mAuth.getCurrentUser();
+                           Intent intent = new Intent(MainActivity.this, HotelPageActivity.class);
+                           intent.putExtra("name", editTextTextEmailAddress.getText().toString());
+                           startActivity(intent);
+
 
                        } else {
                            // If sign in fails, display a message to the user.

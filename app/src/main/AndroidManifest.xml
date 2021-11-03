@@ -13,7 +13,7 @@
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ArrayListActivity"
             android:exported="true" />
         <activity
             android:name=".AlertDialogActivity"
@@ -28,7 +28,7 @@
             android:name=".HotelPageActivity"
             android:exported="true" />
         <activity
-            android:name=".ArrayListActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
