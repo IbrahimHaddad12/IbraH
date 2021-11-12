@@ -40,9 +40,22 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
         editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonlogin = findViewById(R.id.buttonlogin);
+        buttonsignup=findViewById(R.id.buttonsignup);
 
         //sets the required button to response to long click,otherwise it won't
         buttonlogin.setOnLongClickListener(this);
+        buttonsignup.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                signupActivity();
+
+            }
+
+            private void signupActivity() {
+                Intent intent= new Intent(MainActivity.this,SignUpActivity.class);
+                startActivity(intent);
+            }
+        }));
         SharedPreferences sp = getSharedPreferences("settings", MODE_PRIVATE);
         String email = sp.getString("email", "");
         String password = sp.getString("password", "");
@@ -113,5 +126,6 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
 
 
    }
+
 
 }

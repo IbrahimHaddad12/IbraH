@@ -19,8 +19,9 @@ import com.google.firebase.auth.FirebaseUser;
 public class SignUpActivity extends AppCompatActivity {
 
     private static final String TAG = "FIREBASE";
-    private EditText editTextTextEmailAddress2, editTextTextPassword;
+    private EditText editTextTextEmailAddress2, editTextTextPassword,Username;
     private FirebaseAuth mAuth;
+
 
 
     @Override
@@ -30,7 +31,9 @@ public class SignUpActivity extends AppCompatActivity {
 
         editTextTextEmailAddress2  =findViewById(R.id.editTextTextEmailAddress2);
         editTextTextPassword = findViewById(R.id.editTextTextPassword);
+        Username= findViewById(R.id.Username);
         mAuth = FirebaseAuth.getInstance();
+
     }
 
     public void submit(View view) {
