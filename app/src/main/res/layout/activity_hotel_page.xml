@@ -10,9 +10,15 @@
     android:paddingVertical="10dp"
     tools:context=".HotelPageActivity"
     android:background="@drawable/welcomebg"
-    android:gravity="center"
+
 
     >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    />
 
 
     <TextView
@@ -20,15 +26,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Take a Picture here"
-android:layout_marginLeft="50dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="bottom"
+
         />
 
     <Button
         android:id="@+id/Camera"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Camera" />
+        android:text="Camera"
+        android:layout_gravity="bottom"
+
+        />
 
 
 
