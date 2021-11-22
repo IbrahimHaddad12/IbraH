@@ -17,11 +17,26 @@ public class MusicService extends Service {
     public IBinder onBind(Intent intent) {
      return null;
     }
-
+//this method is called when service is created
     @Override
     public void onCreate() {
         super.onCreate();
         mediaPlayer = MediaPlayer.create(this, R.raw.chopin);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.setVolume(100,100);
 
     }
+//when the service is started//
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        mediaPlayer.start(); //starts the music
+        return super.onStartCommand(intent, flags, startId);
+    }
+//when the service is destroyed, stop playing the music//
+    @Override
+    public void onDestroy() {
+        mediaPlayer.stop();
+
+    }
+
 }

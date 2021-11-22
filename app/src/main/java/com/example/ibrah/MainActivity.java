@@ -26,7 +26,7 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
     private Button buttonsignup;
     private EditText editTextPassword, editTextTextEmailAddress;
     private FirebaseAuth mAuth;
-
+    private Intent musicIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,9 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
         //Initialize firebase auth
         mAuth = FirebaseAuth.getInstance();
 
+        //this will start the service, as a result so will the music
+        musicIntent = new Intent(this, MusicService.class);
+        startService(musicIntent);
 
 
         editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
