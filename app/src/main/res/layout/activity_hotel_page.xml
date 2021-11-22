@@ -31,7 +31,7 @@
         android:layout_height="55dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="540dp"
-        android:text="Take a Picture here"
+        android:text="Take a Picture Here"
         android:textSize="20dp"
 
         />
@@ -40,12 +40,10 @@
         android:id="@+id/Camera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Camera"
 
         />
-
-
 
 
 </LinearLayout>
