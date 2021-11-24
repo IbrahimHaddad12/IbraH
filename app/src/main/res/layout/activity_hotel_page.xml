@@ -25,34 +25,45 @@
 
         />
 
-    <TextView
-        android:id="@+id/textViewTakePicture"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="540dp"
-        android:text="Take a Picture Here"
-        android:textSize="20dp"
+        android:layout_height="match_parent">
 
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/Camera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Camera"
+            <ImageView
+                android:id="@+id/imageViewAmanzoe"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="25dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/amanzoe" />
 
-        />
+            <TextView
+                android:id="@+id/textViewTakePicture"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="130dp"
+                android:text="Take a Picture Here"
+                android:textSize="20dp"
 
-    <ImageView
-        android:id="@+id/imageViewAmanzoe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Amanzoe"
-        
+                />
 
-        />
+            <Button
+                android:id="@+id/Camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Camera"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
