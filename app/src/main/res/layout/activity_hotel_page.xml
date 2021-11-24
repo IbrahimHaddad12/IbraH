@@ -45,6 +45,15 @@
 
         />
 
+    <ImageView
+        android:id="@+id/imageViewAmanzoe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/Amanzoe"
+        
+
+        />
+
 
 </LinearLayout>
 
