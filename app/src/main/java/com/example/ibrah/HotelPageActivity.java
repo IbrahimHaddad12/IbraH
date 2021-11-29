@@ -3,7 +3,10 @@ package com.example.ibrah;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,31 +19,25 @@ import android.widget.Toast;
 
 public class HotelPageActivity extends AppCompatActivity implements DialogInterface.OnClickListener{
 
+    private static final int NOTIFICATION_REMINDER_NIGHT = 1;
 
-    private TextView textViewTakePicture;
-    private Button ButtonCamera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel_page);
 
-        textViewTakePicture = findViewById(R.id.textViewTakePicture);
-        ButtonCamera= findViewById(R.id.Camera);
+
+
 
         String name = getIntent().getStringExtra( "name");
 
-        ButtonCamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                CameraActivity();
-            }
 
-            private void CameraActivity() {
-                Intent intent= new Intent(HotelPageActivity.this,ProfileActivity.class);
-                startActivity(intent);
-            }
-        });
+        Intent notifyIntent = new Intent(this, NotificationReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 1000*60*60*24, pendingIntent);
+
     }
 
     @Override
