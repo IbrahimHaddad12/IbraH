@@ -14,12 +14,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class HotelPageActivity extends AppCompatActivity implements DialogInterface.OnClickListener{
+public class HotelPageActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
 
     private static final int NOTIFICATION_REMINDER_NIGHT = 1;
+
 
 
     @Override
@@ -27,11 +29,7 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel_page);
 
-
-
-
         String name = getIntent().getStringExtra( "name");
-
 
         Intent notifyIntent = new Intent(this, NotificationReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -86,6 +84,5 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }

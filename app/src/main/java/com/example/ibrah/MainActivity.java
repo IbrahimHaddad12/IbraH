@@ -39,7 +39,6 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
         musicIntent = new Intent(this, MusicService.class);
         startService(musicIntent);
 
-
         editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonlogin = findViewById(R.id.buttonlogin);
@@ -68,7 +67,6 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
         }
     }
 
-
     public void login(View view) {
         if (!editTextTextEmailAddress.getText().toString().equals("")){
             //saving email and password of user in a local file for future use
@@ -83,10 +81,7 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
             //save and close file
             editor.commit();
 
-
-
             // startActivity(intent)
-
 
     }
     login(editTextTextEmailAddress.getText().toString(), editTextPassword.getText().toString());
