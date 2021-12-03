@@ -36,9 +36,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:clickable="true"
-                app:srcCompat="@drawable/amanzoe"
-
-                />
+                android:onClick="Amanzoe"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/amanzoe" />
 
             <TextView
 
@@ -56,6 +57,33 @@
                 android:layout_height="match_parent"
                 android:rating="5" />
 
+            <ImageView
+                android:id="@+id/imageViewMuraka"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/muraka"
+                app:srcCompat="@drawable/muraka"
+                android:onClick="Muraka"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="The Muraka - Maldives "
+                android:textSize="15sp"
+
+                />
+            <RatingBar
+                android:id="@+id/RatingMuraka"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:rating="5" />
 
         </LinearLayout>
 

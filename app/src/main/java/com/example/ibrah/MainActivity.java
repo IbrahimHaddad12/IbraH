@@ -28,6 +28,7 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
     private FirebaseAuth mAuth;
     private Intent musicIntent;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,8 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
         musicIntent = new Intent(this, MusicService.class);
         startService(musicIntent);
 
+
+
         editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonlogin = findViewById(R.id.buttonlogin);
@@ -49,15 +52,11 @@ public class MainActivity extends Activity implements View.OnLongClickListener {
         buttonsignup.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                signupActivity();
-
-            }
-
-            private void signupActivity() {
                 Intent intent= new Intent(MainActivity.this,SignUpActivity.class);
                 startActivity(intent);
             }
         }));
+
         SharedPreferences sp = getSharedPreferences("settings", MODE_PRIVATE);
         String email = sp.getString("email", "");
         String password = sp.getString("password", "");

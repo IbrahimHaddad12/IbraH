@@ -23,7 +23,6 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
     private static final int NOTIFICATION_REMINDER_NIGHT = 1;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,5 +83,16 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
         }
         return super.onOptionsItemSelected(item);
     }
+  public void Amanzoe(View view){
 
+        //TODO change destination to amanzoe description page...
+      Intent intent= new Intent(HotelPageActivity.this,SignUpActivity.class);
+      startActivity(intent);
+  }
+    public void Muraka(View view){
+
+        //TODO change destination to Muraka description page...
+        Intent intent= new Intent(HotelPageActivity.this,SignUpActivity.class);
+        startActivity(intent);
+    }
 }
