@@ -65,7 +65,6 @@
                 android:scaleType="fitXY"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/muraka"
-                app:srcCompat="@drawable/muraka"
                 android:onClick="Muraka"
 
             />
