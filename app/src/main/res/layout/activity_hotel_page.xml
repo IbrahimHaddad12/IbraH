@@ -92,7 +92,7 @@
                 android:scaleType="fitXY"
                 android:layout_marginTop="20dp"
                 android:onClick="DeLEurope"
-                android:src="@drawable/AmsterdamHotel"
+                android:src="@drawable/amsterdamhotel"
 
                 />
 
