@@ -34,7 +34,7 @@
             <ImageView
                 android:id="@+id/imageViewAmanzoe"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 android:clickable="true"
                 android:onClick="Amanzoe"
                 android:scaleType="fitXY"
@@ -60,7 +60,7 @@
             <ImageView
                 android:id="@+id/imageViewMuraka"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 android:clickable="true"
                 android:scaleType="fitXY"
                 android:layout_marginTop="20dp"
@@ -83,6 +83,36 @@
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:rating="5" />
+
+            <ImageView
+                android:id="@+id/DeLEurope"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:onClick="DeLEurope"
+                android:src="@drawable/AmsterdamHotel"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="De L'Europe Amsterdam - Amsterdam, Netherlands"
+                android:textSize="15sp"
+                />
+
+            <RatingBar
+                android:id="@+id/RatingAmsterdam"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:rating="5" />
+
+
 
         </LinearLayout>
 
