@@ -18,15 +18,28 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class HotelPageActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
 
     private static final int NOTIFICATION_REMINDER_NIGHT = 1;
-
+    private FirebaseAuth maFirebaseAuth = FirebaseAuth.getInstance();
+    // Write a message to the database
+    private FirebaseDatabase database = FirebaseDatabase.getInstance(https://ibrah-99f52-default-rtdb.europe-west1.firebasedatabase.app/);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel_page);
+
+
+
+        String UID = maFirebaseAuth.getUid();
+        DatabaseReference myRef = database.getReference("users/"+UID);
+
+
 
         String name = getIntent().getStringExtra( "name");
 
