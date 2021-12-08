@@ -27,6 +27,7 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
     private static final int NOTIFICATION_REMINDER_NIGHT = 1;
     private FirebaseAuth maFirebaseAuth = FirebaseAuth.getInstance();
     // Write a message to the database
+    //TODO fix https
     private FirebaseDatabase database = FirebaseDatabase.getInstance(https://ibrah-99f52-default-rtdb.europe-west1.firebasedatabase.app/);
 
     @Override
