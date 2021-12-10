@@ -15,20 +15,38 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class HotelPageActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
 
+
+    //the object of the view - design
+    private ListView myListView;
+    //the object for the adapter connecting the data to the view
+    private CustomAdapter myAdapter;
+    //object containing the items to be displayed - data
+    private ArrayList<Item> list;   //TODO change to hotel
+
+
     private static final int NOTIFICATION_REMINDER_NIGHT = 1;
+    // Get instance of authentication project in firebase console
     private FirebaseAuth maFirebaseAuth = FirebaseAuth.getInstance();
-    // Write a message to the database
-    //TODO fix https
-    private FirebaseDatabase database = FirebaseDatabase.getInstance(https://ibrah-99f52-default-rtdb.europe-west1.firebasedatabase.app/);
+
+    // Gets the root of the real time database in the firebase console
+    private FirebaseDatabase database = FirebaseDatabase.getInstance("https://ibrah-99f52-default-rtdb.europe-west1.firebasedatabase.app/");
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +56,12 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
 
 
         String UID = maFirebaseAuth.getUid();
+        Toast.makeText(this, "UID: "+UID, Toast.LENGTH_LONG).show();
+        // build reference for user related data in real time database using user ID
         DatabaseReference myRef = database.getReference("users/"+UID);
-
+        Item item = new Item("NOT my first item", R.drawable.ronaldo, true, 1);
+        // adds item to firebase under the reference specified
+        myRef.push().setValue(item);
 
 
         String name = getIntent().getStringExtra( "name");
@@ -48,6 +70,26 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 1000*60*60*24, pendingIntent);
+
+
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+              for(DataSnapshot dataSnapshot: snapshot.getChildren()){
+                  Item item1 = dataSnapshot.getValue(Item.class);
+                  list.add(item1);
+                  myAdapter.notifyDataSetChanged();
+              }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
 
     }
 

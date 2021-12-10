@@ -13,13 +13,21 @@ public class Reservation {
 
     }
 
+    public int getNumGuests() {
+        return numGuests;
+    }
 
+    public void setNumGuests(int numGuests) {
+        this.numGuests = numGuests;
+    }
 
+    public int getNumRooms() {
+        return numRooms;
+    }
 
-
-
-
-
+    public void setNumRooms(int numRooms) {
+        this.numRooms = numRooms;
+    }
 
 
 }
