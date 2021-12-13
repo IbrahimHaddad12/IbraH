@@ -1,10 +1,13 @@
 package com.example.ibrah;
 
-public class Reservation {
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class Reservation extends AppCompatActivity {
 
     private int numGuests;
     private int numRooms;
-
 
     public Reservation(int numGuests, int numRooms){
 
@@ -30,4 +33,24 @@ public class Reservation {
     }
 
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_reservation);
+
+
+
+
+
+    }
 }
+
+
+
+
+
+
+
+
+
+

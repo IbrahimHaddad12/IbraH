@@ -54,7 +54,6 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
         setContentView(R.layout.activity_hotel_page);
 
 
-
         String UID = maFirebaseAuth.getUid();
         Toast.makeText(this, "UID: "+UID, Toast.LENGTH_LONG).show();
         // build reference for user related data in real time database using user ID
@@ -87,9 +86,6 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
 
             }
         });
-
-
-
 
     }
 
