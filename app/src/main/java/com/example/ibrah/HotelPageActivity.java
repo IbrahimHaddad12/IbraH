@@ -65,19 +65,15 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
 
         String name = getIntent().getStringExtra( "name");
 
-        Intent notifyIntent = new Intent(this, NotificationReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 1000*60*60*24, pendingIntent);
+
 
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
               for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-                  Item item1 = dataSnapshot.getValue(Item.class);
-                  list.add(item1);
-                  myAdapter.notifyDataSetChanged();
+
+
               }
             }
 

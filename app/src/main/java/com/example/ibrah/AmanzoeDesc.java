@@ -13,6 +13,8 @@ import android.widget.ViewSwitcher;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+
+
 public class AmanzoeDesc extends AppCompatActivity {
 
     ImageButton btPrevious,btNext;
