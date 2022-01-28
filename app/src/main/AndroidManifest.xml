@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ibrah">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IbraH">
         <activity
+            android:name=".AmanzoeDesc"
+            android:exported="true" />
+        <activity
             android:name=".Reservation"
             android:exported="true" />
-
         <activity
             android:name=".ProfileActivity"
             android:exported="true" />
-
         <activity
             android:name=".ArrayListActivity"
             android:exported="true" />
@@ -43,6 +42,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
         <receiver
             android:name=".NotificationReceiver"
             android:enabled="true"
@@ -50,8 +52,7 @@
 
         <service
             android:name=".NotificationIntentService"
-            android:exported="false"></service>
-
+            android:exported="false" />
         <service
             android:name=".MusicService"
             android:enabled="true"
@@ -60,4 +61,5 @@
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

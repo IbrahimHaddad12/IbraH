@@ -5,7 +5,7 @@
     android:id="@+id/AmanzoeDesc"
     android:orientation="vertical"
 
->
+    >
 
     <ImageButton
         android:layout_width="50dp"
@@ -30,41 +30,6 @@
         android:background="@android:color/transparent"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
         />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
