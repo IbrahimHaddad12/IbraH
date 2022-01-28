@@ -137,20 +137,20 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
     }
   public void Amanzoe(View view){
 
-        //TODO change destination to amanzoe description page...
-      Intent intent= new Intent(HotelPageActivity.this,SignUpActivity.class);
+
+      Intent intent= new Intent(HotelPageActivity.this,AmanzoeDesc.class);
       startActivity(intent);
   }
     public void Muraka(View view){
 
-        //TODO change destination to Muraka description page (Make 1 fragment page for all the other hotels)...
+        //TODO change destination to Muraka description page
         Intent intent= new Intent(HotelPageActivity.this,SignUpActivity.class);
         startActivity(intent);
     }
 
     public void DeLEurope(View view){
 
-        //TODO change destination to De L'Europe Amsterdam description page (Make 1 fragment page for all the other hotels)...
+        //TODO change destination to De L'Europe Amsterdam description page
         Intent intent= new Intent(HotelPageActivity.this,SignUpActivity.class);
         startActivity(intent);
     }

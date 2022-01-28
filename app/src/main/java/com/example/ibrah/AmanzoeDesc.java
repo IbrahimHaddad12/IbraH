@@ -18,15 +18,15 @@ public class AmanzoeDesc extends AppCompatActivity {
     ImageButton btPrevious,btNext;
     ImageSwitcher imageSwitcher;
 
-    //TODO add some images for Amanzoe Hotel MUST BE .PNG!
-    int imageList[]={R.drawable.Amanzoe2};
+    //TODO add some images for Amanzoe Hotel (must be .PNG)
+    int imageList[]={R.drawable.amanzoe1,R.drawable.amanzoe2, R.drawable.amanzoe3, R.drawable.amanzoe4};
     int count=imageList.length;
     int currentIndex=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_amanzoe_desc);
 
         // assign variables
         btPrevious=findViewById(R.id.bt_previous);
