@@ -18,7 +18,8 @@ public class AmanzoeDesc extends AppCompatActivity {
     ImageButton btPrevious,btNext;
     ImageSwitcher imageSwitcher;
 
-    int imageList[]={R.drawable.ronaldo};
+    //TODO add some images for Amanzoe Hotel MUST BE .PNG!
+    int imageList[]={R.drawable.Amanzoe2};
     int count=imageList.length;
     int currentIndex=0;
 

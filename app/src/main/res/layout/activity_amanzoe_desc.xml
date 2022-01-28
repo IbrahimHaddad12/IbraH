@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:id="@+id/AmanzoeDesc"
-    android:orientation="vertical"
+    android:orientation="horizontal"
 
     >
 
@@ -13,6 +14,7 @@
         android:id="@+id/bt_previous"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginBottom="200dp"
         />
 
 
@@ -20,6 +22,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:id="@+id/image_switcher"
+        android:layout_marginBottom="200dp"
         />
 
 
@@ -29,6 +32,7 @@
         android:id="@+id/bt_next"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:layout_marginBottom="200dp"
         />
 
 
