@@ -24,14 +24,14 @@ import java.util.ArrayList;
 
 public class AmanzoeDesc extends AppCompatActivity {
 
-    private ImageSlider ImageSlider;
+    private ImageSlider ImageSliderAmanzoe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amanzoe_desc);
 
-        ImageSlider = findViewById(R.id.ImageSlider);
+        ImageSliderAmanzoe = findViewById(R.id.ImageSliderAmanzoe);
 
         ArrayList<SlideModel>slideModels = new ArrayList<>();
 
@@ -40,7 +40,7 @@ public class AmanzoeDesc extends AppCompatActivity {
         slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe-Greece-9.jpg?itok=pBW5th3P", ScaleTypes.FIT));
         slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe_Gallery_7.jpg?itok=-qpYI1dF", ScaleTypes.FIT));
 
-        ImageSlider.setImageList(slideModels, ScaleTypes.FIT);
+        ImageSliderAmanzoe.setImageList(slideModels, ScaleTypes.FIT);
 
 
 

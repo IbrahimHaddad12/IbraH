@@ -27,12 +27,12 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                app:iss_period="1000"
+                app:iss_period="1500"
                 app:iss_auto_cycle="true"
-                app:iss_delay="1000"
+                app:iss_delay="1500"
                 app:iss_corner_radius="10"
                 app:iss_title_background="@drawable/amanzoe"
-                android:id="@+id/ImageSlider"/>
+                android:id="@+id/ImageSliderAmanzoe"/>
 
 
 
