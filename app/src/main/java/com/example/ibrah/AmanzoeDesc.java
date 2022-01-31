@@ -1,6 +1,8 @@
 package com.example.ibrah;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.icu.number.Scale;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -13,73 +15,40 @@ import android.widget.ViewSwitcher;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
+
+import java.util.ArrayList;
 
 
 public class AmanzoeDesc extends AppCompatActivity {
 
-    ImageButton btPrevious,btNext;
-    ImageSwitcher imageSwitcher;
-
-    //TODO add some images for Amanzoe Hotel (must be .PNG)
-    int imageList[]={R.drawable.amanzoe1,R.drawable.amanzoe2, R.drawable.amanzoe3, R.drawable.amanzoe4};
-    int count=imageList.length;
-    int currentIndex=0;
+    private ImageSlider ImageSlider;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amanzoe_desc);
 
-        // assign variables
-        btPrevious=findViewById(R.id.bt_previous);
-        btNext=findViewById(R.id.bt_next);
-        imageSwitcher=findViewById(R.id.image_switcher);
+        ImageSlider = findViewById(R.id.ImageSlider);
 
-        // implement the ViewFactory interface and implement
-        // unimplemented method that returns an imageView
-        imageSwitcher.setFactory(new ViewSwitcher.ViewFactory(){
-            @Override
-            public View makeView() {
-                ImageView imageView= new ImageView(getApplicationContext());
-                imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                imageView.setLayoutParams(new ViewGroup.LayoutParams(
-                        ViewGroup.LayoutParams.FILL_PARENT
-                        ,ViewGroup.LayoutParams.FILL_PARENT
-                ));
-                // returning imageview
-                return imageView;
-            }
-        });
-        imageSwitcher.setImageResource(imageList[0]);
-        // set on click listener on left button
-        btPrevious.setOnClickListener(new  View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // setting animation to swipe image from right to left
-                imageSwitcher.setInAnimation(AmanzoeDesc.this,R.anim.from_right);
-                imageSwitcher.setOutAnimation(AmanzoeDesc.this,R.anim.to_left);
-                --currentIndex;
-                // condition
-                if(currentIndex<0)
-                    currentIndex=imageList.length-1;
-                imageSwitcher.setImageResource((imageList[currentIndex]));
-            }
-        });
+        ArrayList<SlideModel>slideModels = new ArrayList<>();
 
-        // set on click listener on right(next) button
-        btNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe-Gallery-1.jpg?itok=8Ka85Vdg", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe_Gallery_2.jpg?itok=4as4M02m", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe-Greece-9.jpg?itok=pBW5th3P", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe_Gallery_7.jpg?itok=-qpYI1dF", ScaleTypes.FIT));
 
-                // setting animation to swipe image from left to right
-                imageSwitcher.setInAnimation(AmanzoeDesc.this,R.anim.from_left);
-                imageSwitcher.setOutAnimation(AmanzoeDesc.this,R.anim.to_right);
-                currentIndex++;
-                // condition
-                if(currentIndex==count)
-                    currentIndex=0;
-                imageSwitcher.setImageResource(imageList[currentIndex]);
-            }
-        });
+        ImageSlider.setImageList(slideModels, ScaleTypes.FIT);
+
+
+
     }
+
+
+
+
+
+
 }
