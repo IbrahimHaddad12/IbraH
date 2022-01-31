@@ -139,15 +139,15 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
   }
     public void Muraka(View view){
 
-        //TODO change destination to Muraka description page
-        Intent intent= new Intent(HotelPageActivity.this,SignUpActivity.class);
+
+        Intent intent= new Intent(HotelPageActivity.this, MurakaDesc.class);
         startActivity(intent);
     }
 
     public void DeLEurope(View view){
 
-        //TODO change destination to De L'Europe Amsterdam description page
-        Intent intent= new Intent(HotelPageActivity.this,SignUpActivity.class);
+
+        Intent intent= new Intent(HotelPageActivity.this, LEuropeDesc.class);
         startActivity(intent);
     }
 
