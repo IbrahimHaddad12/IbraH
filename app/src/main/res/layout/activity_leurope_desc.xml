@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/LEuropeDesc"
     android:orientation="vertical"
-
+    android:background="@drawable/welcomebg"
     >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -34,5 +34,6 @@
         app:iss_title_background="@drawable/amanzoe"
         android:id="@+id/ImageSliderLEurope"/>
 
+    //$900 / night //
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/AmanzoeDesc"
     android:orientation="vertical"
-
+    android:background="@drawable/welcomebg"
     >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -25,6 +25,7 @@
 
             <com.denzcoskun.imageslider.ImageSlider
 
+
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 app:iss_period="1500"
@@ -38,8 +39,7 @@
 
 
 
-
-
+ //price $990//
 
 
 

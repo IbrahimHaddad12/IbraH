@@ -30,7 +30,7 @@ public class About extends AppCompatActivity {
                 Toast.makeText(this,"Settings", Toast.LENGTH_LONG).show();
             break;
             case R.id.exit:
-              //  closeApplication();//
+               //closeApplication();//
 
             break;
     }

@@ -34,10 +34,10 @@ public class LEuropeDesc extends AppCompatActivity {
 
         ArrayList<SlideModel>slideModels = new ArrayList<>();
 
-        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe-Gallery-1.jpg?itok=8Ka85Vdg", ScaleTypes.FIT));
-        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe_Gallery_2.jpg?itok=4as4M02m", ScaleTypes.FIT));
-        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe-Greece-9.jpg?itok=pBW5th3P", ScaleTypes.FIT));
-        slideModels.add(new SlideModel("https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2021-03/Amanzoe_Gallery_7.jpg?itok=-qpYI1dF", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://res.cloudinary.com/grand-luxury/image/upload/w_1440,q_50,f_auto,c_fill,g_center,dpr_1/remote_glh/original/100461-root-exteriors-front-facade.jpg", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.deleurope.com/wp-content/uploads/DLE_Rondeel_10414-512x360.jpg", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://res.cloudinary.com/grand-luxury/image/upload/w_1440,q_50,f_auto,c_fill,g_center,dpr_1/remote_glh/original/102096-root-premium-deluxe-river-view-bed.jpg", ScaleTypes.FIT));
+
 
         ImageSliderLEurope.setImageList(slideModels, ScaleTypes.FIT);
 
