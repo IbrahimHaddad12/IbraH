@@ -34,5 +34,6 @@
         app:iss_title_background="@drawable/muraka"
         android:id="@+id/ImageSliderMuraka"/>
 
+    //$1,600-$18,000 depending on room for example: underwater room is 18k//
 
 </androidx.constraintlayout.widget.ConstraintLayout>
