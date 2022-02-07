@@ -35,11 +35,55 @@
                 app:iss_title_background="@drawable/amanzoe"
                 android:id="@+id/ImageSliderAmanzoe"/>
 
+    <TextView
+        android:id="@+id/AmanzoeHotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Amanzoe, Porto Heli, Greece"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageSliderAmanzoe" />
+
+    <TextView
+        android:id="@+id/PriceRangeAmanzoe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Price Range: $1000 - $3000"
+        android:textColor="@color/teal_200"
+        app:layout_constraintStart_toStartOf="@+id/AmanzoeHotelName"
+        app:layout_constraintTop_toBottomOf="@+id/AmanzoeHotelName" />
+
+    <TextView
+        android:id="@+id/AboutAmanzoe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="About"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/PriceRangeAmanzoe"
+        app:layout_constraintTop_toBottomOf="@+id/PriceRangeAmanzoe" />
+
+    <TextView
+        android:id="@+id/AboutAmanzoeDesc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoText="false"
+        android:elegantTextHeight="false"
+        android:text="The resort is breathtaking! The Amanzoe design is strongly influenced by classical Greek architecture, yet is contemporary in attitude. Furthermore, Amanzoe guests can enjoy the exlusive use of the Beach Club situated in a beautiful bay with sparkling turquoise waters."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/AboutAmanzoe"
+        app:layout_constraintTop_toBottomOf="@+id/AboutAmanzoe" />
 
 
-
-
- //price $990//
 
 
 

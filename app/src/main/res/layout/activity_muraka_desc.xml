@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MurakaDesc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/MurakaDesc"
-    android:orientation="vertical"
     android:background="@drawable/welcomebg"
-    >
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        />
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,16 +14,69 @@
 
         />
 
+    <TextView
+        android:id="@+id/AboutTheMuraka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="About"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/PriceRangeTheMuraka"
+        app:layout_constraintTop_toBottomOf="@+id/PriceRangeTheMuraka" />
+
+    <TextView
+        android:id="@+id/TheMurakaHotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="The Muraka, Conrad Maldives"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/ImageSliderMuraka"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/PriceRangeTheMuraka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Price Range: $1,800 - $18,000"
+        android:textColor="@color/teal_200"
+        app:layout_constraintStart_toStartOf="@+id/TheMurakaHotelName"
+        app:layout_constraintTop_toBottomOf="@+id/TheMurakaHotelName" />
+
+    <TextView
+        android:id="@+id/AboutTheMurakaDesc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="The Muraka is the world's fist ever underwater hotel suite, set on the Indian Ocean"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/AboutTheMuraka"
+        app:layout_constraintTop_toBottomOf="@+id/AboutTheMuraka" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
     <com.denzcoskun.imageslider.ImageSlider
 
+        android:id="@+id/ImageSliderMuraka"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:iss_period="1500"
         app:iss_auto_cycle="true"
-        app:iss_delay="1500"
         app:iss_corner_radius="10"
-        app:iss_title_background="@drawable/muraka"
-        android:id="@+id/ImageSliderMuraka"/>
+        app:iss_delay="1500"
+        app:iss_period="1500"
+        app:iss_title_background="@drawable/muraka" />
 
     //$1,600-$18,000 depending on room for example: underwater room is 18k//
 
