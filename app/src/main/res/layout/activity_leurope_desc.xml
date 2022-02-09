@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:background="@drawable/welcomebg"
     >
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,14 +26,64 @@
 
     <com.denzcoskun.imageslider.ImageSlider
 
+        android:id="@+id/ImageSliderLEurope"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:iss_period="1500"
         app:iss_auto_cycle="true"
-        app:iss_delay="1500"
         app:iss_corner_radius="10"
-        app:iss_title_background="@drawable/amanzoe"
-        android:id="@+id/ImageSliderLEurope"/>
+        app:iss_delay="1500"
+
+        app:iss_period="1500">
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <TextView
+        android:id="@+id/DeLEuropeHotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="De L’Europe, Amsterdam"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageSliderLEurope" />
+
+    <TextView
+        android:id="@+id/priceRangeDeLEurope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Price Range: $800 - $900"
+        android:textColor="@color/teal_200"
+        app:layout_constraintStart_toStartOf="@+id/DeLEuropeHotelName"
+        app:layout_constraintTop_toBottomOf="@+id/DeLEuropeHotelName" />
+
+    <TextView
+        android:id="@+id/aboutDeLEurope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="About"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/priceRangeDeLEurope"
+        app:layout_constraintTop_toBottomOf="@+id/priceRangeDeLEurope" />
+
+    <TextView
+        android:id="@+id/aboutDeLEuropeDesc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoText="false"
+        android:elegantTextHeight="false"
+        android:text="Experience original Amsterdam luxury at De L’Europe Amsterdam. Since establishing itself in 1896, almost one hundred and twenty-five years ago as an independent luxury hotel, De L’Europe has evolved from exclusive hotel in the heart of Amsterdam into a guardian of local culture and craftsmanship. Located on the foundations of the city wall, this iconic Amsterdam landmark is set on the banks of the river Amstel. Stylish rooms and suites embrace local heritage with replicas of Dutch Masters paintings adorning the walls and bold hues of reds and blues, with special attention to design detail and modern technology. The hotel also offers a selection of the finest haute cuisine in Amsterdam and an unbeatable outdoor dining venue right on the river Amstel."
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/aboutDeLEurope"
+        app:layout_constraintTop_toBottomOf="@+id/aboutDeLEurope" />
 
     //$900 / night //
 

@@ -32,7 +32,7 @@
                 app:iss_auto_cycle="true"
                 app:iss_delay="1500"
                 app:iss_corner_radius="10"
-                app:iss_title_background="@drawable/amanzoe"
+
                 android:id="@+id/ImageSliderAmanzoe"/>
 
     <TextView
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Price Range: $1000 - $3000"
+        android:text="Price Range: $1,000 - $3,000"
         android:textColor="@color/teal_200"
         app:layout_constraintStart_toStartOf="@+id/AmanzoeHotelName"
         app:layout_constraintTop_toBottomOf="@+id/AmanzoeHotelName" />
@@ -79,7 +79,7 @@
         android:elegantTextHeight="false"
         android:text="The resort is breathtaking! The Amanzoe design is strongly influenced by classical Greek architecture, yet is contemporary in attitude. Furthermore, Amanzoe guests can enjoy the exlusive use of the Beach Club situated in a beautiful bay with sparkling turquoise waters."
         android:textColor="#000000"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/AboutAmanzoe"
         app:layout_constraintTop_toBottomOf="@+id/AboutAmanzoe" />
 
