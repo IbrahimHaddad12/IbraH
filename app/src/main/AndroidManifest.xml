@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IbraH">
         <activity
+            android:name=".MandarinOrientalDesc"
+            android:exported="true" />
+        <activity
             android:name=".LEuropeDesc"
             android:exported="true" />
         <activity
@@ -49,6 +52,10 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <receiver
             android:name=".NotificationReceiver"
             android:enabled="true"
@@ -61,14 +68,10 @@
             android:name=".MusicService"
             android:enabled="true"
             android:exported="true" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

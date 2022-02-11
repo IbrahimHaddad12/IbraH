@@ -151,5 +151,12 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
         startActivity(intent);
     }
 
+    public void MandarinOriental(View view){
+
+
+        Intent intent= new Intent(HotelPageActivity.this, MandarinOrientalDesc.class);
+        startActivity(intent);
+    }
+
 }
 

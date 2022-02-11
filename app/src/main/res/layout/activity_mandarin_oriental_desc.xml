@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/MurakaDesc"
+    android:id="@+id/MandarinOrientalDesc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/welcomebg"
@@ -15,7 +15,7 @@
         />
 
     <TextView
-        android:id="@+id/AboutTheMuraka"
+        android:id="@+id/AboutMandarinOriental"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -23,41 +23,41 @@
         android:text="About"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/PriceRangeTheMuraka"
-        app:layout_constraintTop_toBottomOf="@+id/PriceRangeTheMuraka" />
+        app:layout_constraintStart_toStartOf="@+id/PriceRangeMandarinOriental"
+        app:layout_constraintTop_toBottomOf="@+id/PriceRangeMandarinOriental" />
 
     <TextView
-        android:id="@+id/TheMurakaHotelName"
+        android:id="@+id/MandarinOrientalHotelName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="The Muraka, Conrad Maldives"
+        android:text="Mandarin Oriental, Canouan"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImageSliderMuraka" />
+        app:layout_constraintTop_toBottomOf="@+id/ImageSliderMandarinOriental" />
 
     <TextView
-        android:id="@+id/PriceRangeTheMuraka"
+        android:id="@+id/PriceRangeMandarinOriental"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Price Range: $1,800 - $18,000"
+        android:text="Price Range: $1,600 - $2,000"
         android:textColor="@color/teal_200"
-        app:layout_constraintStart_toStartOf="@+id/TheMurakaHotelName"
-        app:layout_constraintTop_toBottomOf="@+id/TheMurakaHotelName" />
+        app:layout_constraintStart_toStartOf="@+id/MandarinOrientalHotelName"
+        app:layout_constraintTop_toBottomOf="@+id/MandarinOrientalHotelName" />
 
     <TextView
-        android:id="@+id/AboutTheMurakaDesc"
+        android:id="@+id/AboutMandarinOrientalDesc"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="The Muraka is the world's fist ever underwater hotel suite set on the Indian Ocean. The Muraka is actually a two-storey residence with an overwater section including a deck, a swimming pool, a lounge and an en suite master bedroom. As you may have already guessed, your entire stay, from beginning to end, is tailored to your preference, and your own personal butler will cater to your every whim around the clock."
+        android:text="Nestled along a white powder stretch of Godahl Beach, Mandarin Oriental, Canouan promises impeccable attention to detail. The resort is home to a collection of atmospheric restaurants offering a variety of culinary delights accompanied by stunning ocean views. Offering 26 suites and 13 villas, Mandarin Oriental, Canouan is an all-ocean view luxury hideaway perfect for families and friends. "
         android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@+id/AboutTheMuraka"
-        app:layout_constraintTop_toBottomOf="@+id/AboutTheMuraka" />
+        app:layout_constraintStart_toStartOf="@+id/AboutMandarinOriental"
+        app:layout_constraintTop_toBottomOf="@+id/AboutMandarinOriental" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -70,7 +70,7 @@
 
     <com.denzcoskun.imageslider.ImageSlider
 
-        android:id="@+id/ImageSliderMuraka"
+        android:id="@+id/ImageSliderMandarinOriental"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:iss_auto_cycle="true"
@@ -80,7 +80,5 @@
 
 
         />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

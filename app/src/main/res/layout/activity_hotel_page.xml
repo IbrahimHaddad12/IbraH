@@ -112,6 +112,28 @@
                 android:layout_height="match_parent"
                 android:rating="5" />
 
+            <ImageView
+                android:id="@+id/MandarinOriental"
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                android:clickable="true"
+                android:onClick="MandarinOriental"
+                app:srcCompat="@drawable/mandarinoriental" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mandarin Oriental - Canouan"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/RatingMandarinOriental"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:rating="5" />
 
 
         </LinearLayout>
