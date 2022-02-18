@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Price Range: $1,800 - $18,000"
+        android:text="Price Range: $1,800 - $18,000 / night"
         android:textColor="@color/teal_200"
         app:layout_constraintStart_toStartOf="@+id/TheMurakaHotelName"
         app:layout_constraintTop_toBottomOf="@+id/TheMurakaHotelName" />

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SignUpActivity"
-    android:background="@drawable/loginbg"
+    android:background="@drawable/welcomebg"
     android:gravity="center"
     >
     <EditText
@@ -51,7 +51,7 @@
         android:layout_height="61dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#69D1FA"
+        android:backgroundTint="#3C3C3C"
         android:onClick="submit"
         android:text="SUBMIT" />
 
