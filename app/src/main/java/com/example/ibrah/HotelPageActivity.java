@@ -124,8 +124,8 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
             case R.id.settingsmenu:
                 Toast.makeText(this,"Settings", Toast.LENGTH_LONG).show();
                 break;
-            case R.id.exit:
-                //  closeApplication();//
+            case R.id.Profile:
+                startActivity(new Intent(HotelPageActivity.this, ProfileActivity.class));
 
                 break;
         }

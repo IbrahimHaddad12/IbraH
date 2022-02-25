@@ -3,6 +3,7 @@ package com.example.ibrah;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,9 +29,9 @@ public class About extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.settingsmenu:
                 Toast.makeText(this,"Settings", Toast.LENGTH_LONG).show();
-            break;
-            case R.id.exit:
-               //closeApplication();//
+                break;
+            case R.id.Profile:
+               startActivity(new Intent(About.this, ProfileActivity.class));
 
             break;
     }

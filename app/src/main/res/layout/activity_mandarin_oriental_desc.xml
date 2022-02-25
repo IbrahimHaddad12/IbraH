@@ -79,6 +79,9 @@
         app:iss_period="1500"
 
 
-        />
+        >
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

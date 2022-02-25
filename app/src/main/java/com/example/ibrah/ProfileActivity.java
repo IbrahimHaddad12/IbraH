@@ -2,6 +2,7 @@ package com.example.ibrah;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -22,7 +23,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private static final int GALLERY_REQUEST = 1;
 
     private Button buttonCamera, buttonGallery;
-    private ImageView imageViewProfile;
+    private CircleImageView imageViewProfile;
 
     //for picture of camera//
     private Bitmap picture;

@@ -6,6 +6,6 @@
         android:id="@+id/settingsmenu"
         android:title="Settings" />
     <item
-        android:id="@+id/exit"
-        android:title="Exit" />
+        android:id="@+id/Profile"
+        android:title="Profile Picture" />
 </menu>
