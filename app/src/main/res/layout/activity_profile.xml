@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
     android:orientation="vertical"
-    android:background="@drawable/welcomebg"
+    android:background="#28282B"
 
     >
 
@@ -15,10 +15,9 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your new profile picture will appear below"
         android:gravity="center"
-        android:textColor="@color/black"
-        />
+        android:text="Your new profile picture will appear below"
+        android:textColor="@color/white" />
 
 
     <de.hdodenhof.circleimageview.CircleImageView

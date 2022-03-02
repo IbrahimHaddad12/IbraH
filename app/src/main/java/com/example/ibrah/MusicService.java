@@ -23,7 +23,7 @@ public class MusicService extends Service {
         super.onCreate();
         mediaPlayer = MediaPlayer.create(this, R.raw.chopin);
         mediaPlayer.setLooping(true);
-        mediaPlayer.setVolume(100,100);
+        mediaPlayer.setVolume(300,300);
 
     }
 //when the service is started//
