@@ -83,5 +83,29 @@
 
     </com.denzcoskun.imageslider.ImageSlider>
 
+    <Button
+        android:id="@+id/CheckIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#191717"
+        android:text="Check In"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AboutMandarinOrientalDesc" />
+
+    <Button
+        android:id="@+id/CheckOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#191717"
+        android:text="Check Out"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AboutMandarinOrientalDesc" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
