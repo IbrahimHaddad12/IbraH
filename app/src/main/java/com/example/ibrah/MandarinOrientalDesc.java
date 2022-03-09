@@ -2,13 +2,16 @@ package com.example.ibrah;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
@@ -24,6 +27,7 @@ public class MandarinOrientalDesc extends AppCompatActivity {
     DatePickerDialog.OnDateSetListener onDateSetListener;
     DatePickerDialog.OnDateSetListener onCheckOutDateSetListener;
     private ImageSlider ImageSliderMuraka;
+    Button ReserveHotel;
 
 
     @Override
@@ -35,6 +39,31 @@ public class MandarinOrientalDesc extends AppCompatActivity {
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        ReserveHotel=findViewById(R.id.ReserveHotel);
+        ReserveHotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MandarinOrientalDesc.this);
+                builder.setTitle("Reserve");
+                builder.setMessage("Are you sure you want to reserve a spot?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MandarinOrientalDesc.this, "Thank you for your order", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+                builder.create();
+                builder.show();
+            }
+        });
 
 
         CheckIn = findViewById(R.id.CheckIn);

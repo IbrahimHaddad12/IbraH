@@ -105,5 +105,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AboutTheMurakaDesc" />
 
+    <Button
+        android:id="@+id/ReserveHotel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#191717"
+        android:text="Reserve"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckIn"
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

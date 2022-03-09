@@ -2,7 +2,9 @@ package com.example.ibrah;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.icu.number.Scale;
@@ -16,6 +18,7 @@ import android.widget.ImageButton;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import android.widget.ViewSwitcher;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,6 +38,7 @@ public class MurakaDesc extends AppCompatActivity {
     DatePickerDialog.OnDateSetListener onDateSetListener;
     DatePickerDialog.OnDateSetListener onCheckOutDateSetListener;
     private ImageSlider ImageSliderMuraka;
+    Button ReserveHotel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -45,6 +49,30 @@ public class MurakaDesc extends AppCompatActivity {
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
+        ReserveHotel=findViewById(R.id.ReserveHotel);
+        ReserveHotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MurakaDesc.this);
+                builder.setTitle("Reserve");
+                builder.setMessage("Are you sure you want to reserve a spot?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MurakaDesc.this, "Thank you for your order", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+                builder.create();
+                builder.show();
+            }
+        });
 
 
         CheckIn = findViewById(R.id.CheckIn);
@@ -102,5 +130,6 @@ public class MurakaDesc extends AppCompatActivity {
 
 
     }
+
 
 }

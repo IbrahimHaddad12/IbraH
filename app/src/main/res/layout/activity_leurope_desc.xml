@@ -37,6 +37,8 @@
 
     </com.denzcoskun.imageslider.ImageSlider>
 
+
+
     <TextView
         android:id="@+id/DeLEuropeHotelName"
         android:layout_width="wrap_content"
@@ -79,7 +81,7 @@
         android:layout_marginTop="8dp"
         android:autoText="false"
         android:elegantTextHeight="false"
-        android:text="Experience original Amsterdam luxury at De L’Europe Amsterdam. Since establishing itself in 1896, almost one hundred and twenty-five years ago as an independent luxury hotel, De L’Europe has evolved from exclusive hotel in the heart of Amsterdam into a guardian of local culture and craftsmanship. Located on the foundations of the city wall, this iconic Amsterdam landmark is set on the banks of the river Amstel. Stylish rooms and suites embrace local heritage with replicas of Dutch Masters paintings adorning the walls and bold hues of reds and blues, with special attention to design detail and modern technology. The hotel also offers a selection of the finest haute cuisine in Amsterdam and an unbeatable outdoor dining venue right on the river Amstel."
+        android:text="Experience original Amsterdam luxury at De L’Europe Amsterdam. Since establishing itself in 1896, almost one hundred and twenty-five years ago as an independent luxury hotel, De L’Europe has evolved from exclusive hotel in the heart of Amsterdam into a guardian of local culture and craftsmanship. Located on the foundations of the city wall, this iconic Amsterdam landmark is set on the banks of the river Amstel. Stylish rooms and suites embrace local heritage with replicas of Dutch Masters paintings. "
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/aboutDeLEurope"
@@ -108,5 +110,19 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aboutDeLEuropeDesc" />
+
+    <Button
+        android:id="@+id/ReserveHotel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#191717"
+        android:text="Reserve"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckIn"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
