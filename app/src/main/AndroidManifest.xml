@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IbraH">
         <activity
-            android:name=".ProfileDetails"
-            android:exported="true" />
-        <activity
             android:name=".MandarinOrientalDesc"
             android:exported="true" />
         <activity

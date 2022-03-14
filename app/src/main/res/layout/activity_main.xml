@@ -19,6 +19,8 @@
         android:inputType="textEmailAddress"
         android:padding="15dp"
         android:hint="Email"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="18dp"
         />
 
     <EditText
@@ -30,13 +32,18 @@
         android:padding="15dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="18dp"
          />
 
     <Button
         android:id="@+id/buttonlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="20dp"
+
         android:backgroundTint="#3C3C3C"
         android:hint="Log In"
         android:onClick="login"
@@ -48,11 +55,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+
         android:backgroundTint="#3C3C3C"
         android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:text="Sign Up"
         android:visibility="visible"
-        tools:visibility="visible" />
+        app:iconTint="#E4DADA"
+        tools:visibility="visible"
+
+        />
 
 
 

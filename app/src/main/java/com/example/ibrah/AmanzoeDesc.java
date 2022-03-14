@@ -113,8 +113,10 @@ public class AmanzoeDesc extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
                 month = month+1;
-                String date = dayOfMonth+"/"+month+"/"+year;
-                CheckOut.setText(date);
+
+                    String date = dayOfMonth + "/" + month + "/" + year;
+                    CheckOut.setText(date);
+
             }
         };
 
