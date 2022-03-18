@@ -27,9 +27,7 @@ public class About extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.settingsmenu:
-                Toast.makeText(this,"Settings", Toast.LENGTH_LONG).show();
-                break;
+
             case R.id.Profile:
                startActivity(new Intent(About.this, ProfileActivity.class));
 

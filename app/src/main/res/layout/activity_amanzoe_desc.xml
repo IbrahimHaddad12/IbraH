@@ -90,7 +90,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="#191717"
-        android:text="Check In"
+        android:text="Check In Date"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AboutAmanzoeDesc" />
@@ -102,7 +102,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="#191717"
-        android:text="Check Out"
+        android:text="Check Out Date"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AboutAmanzoeDesc" />
