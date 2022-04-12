@@ -121,9 +121,7 @@ public class HotelPageActivity extends AppCompatActivity implements DialogInterf
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.settingsmenu:
-                Toast.makeText(this,"Settings", Toast.LENGTH_LONG).show();
-                break;
+
             case R.id.Profile:
                 startActivity(new Intent(HotelPageActivity.this, ProfileActivity.class));
 

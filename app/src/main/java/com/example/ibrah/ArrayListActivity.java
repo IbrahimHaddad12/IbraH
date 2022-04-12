@@ -18,7 +18,7 @@ public class ArrayListActivity extends AppCompatActivity {
     //the object for the adapter connecting the data to the view
     private CustomAdapter myAdapter;
     //object containing the items to be displayed - data
-    private ArrayList<Item> list;   //Item laken e7na bedna n3'ayro l hotel//
+    private ArrayList<Item> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
