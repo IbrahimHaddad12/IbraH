@@ -77,7 +77,6 @@ public class AmanzoeDesc extends AppCompatActivity {
         });
 
 
-
         CheckIn = findViewById(R.id.CheckIn);
         CheckIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,11 +130,6 @@ public class AmanzoeDesc extends AppCompatActivity {
 
         ImageSliderAmanzoe.setImageList(slideModels, ScaleTypes.FIT);
 
-
-
     }
-
-
-
 
 }
